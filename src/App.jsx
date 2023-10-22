@@ -26,6 +26,8 @@ function App() {
             <th id='kelas'>Calc. 1</th>
             <th id='kelas'>MD 1</th>
             <th id='kelas'>PSD</th>
+            <th id='kelas'>Manbis</th>
+            <th id='kelas'>Kombis</th>
           </tr>
         </table>
       </div>
@@ -39,11 +41,13 @@ function App() {
               <tr>
                 <td id='name'>{item.Nama}</td>
                 <td id='NPM'>{item.NPM}</td>
-                <td id='jurusan'>IK</td>
+                <td id='jurusan'>{item.Prodi}</td>
                 <td id='kelas'>{item['DDP 1']}</td>
                 <td id='kelas'>{item['Kalkulus 1']}</td>
                 <td id='kelas'>{item['MD 1']}</td>
                 <td id='kelas'>{item.PSD}</td>
+                <td id='kelas'>{item.Manbis}</td>
+                <td id='kelas'>{item.Kombistek}</td>
               </tr>
             </table>
           </div>

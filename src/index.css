@@ -21,6 +21,12 @@
   margin: 20px 0 50px 0;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .searchbar {
   background-color: white;
   color: black;
@@ -43,26 +49,6 @@
 }
 #search-field:focus{
   background-color: #F5F7F8;
-}
-#submit-button{
-  font-family: "Space Grotesk";
-  font-weight: bold;
-  border: none;
-  border-radius: 17px;
-  padding: 10px 20px;
-  box-shadow: 3px 3px 3px 3px #ccc;
-
-
-  transition-property: background-color, color, padding;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-}
-
-#submit-button:hover{
-  padding: 12px 30px;
-  background-color: #141E46;
-  color: white;
 }
 
 .row{
@@ -110,6 +96,62 @@ td, th{
   text-overflow: clip;
 }
 
+.filter-container{
+  width: auto;
+  font-family: "Space Grotesk";
+  color: white;
+  font-weight: bold;
+
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  border-radius: 17px;
+
+}
+.filter-container select{
+  margin: 10px 1rem;
+  padding: 10px 20px;
+  height: 40px;
+  font-family: "Space Grotesk";
+  border-radius: 17px;
+  border: none;
+  color: black;
+  letter-spacing: 2px;
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+  font-weight: bolder;  
+}
+
+.filter-container select:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+
+.question{
+  position:fixed;
+  bottom: 3%;
+  right: 5%;
+}
+.question button{
+  padding: 15px 23px;
+  font-size: larger;
+  border-radius: 17px;
+  background-color: white;
+  border: none;
+  color: black;
+  font-family: "Space Grotesk";
+  font-weight: bold;
+
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+.question button:hover{
+  background-color: black;
+  color: white;
+}
+
 @media only screen and (max-width: 800px) {
   :root{
     background-image: url("./assets/GradientMobile.png");
@@ -117,16 +159,17 @@ td, th{
   }
   form {
     width: auto;
-    padding: 20px 50px;
+    padding: 20px 10px;
   }
   #search-field{
     margin: 20px 20px;
-    width: 50%;
+    width: 80%;
     text-align: center;
+    font-size: 1rem;
   }
 
   .row{
-    font-size: 12px;
+    font-size: 0.8remrem;
   }
   #NPM{
     word-break: break-all;
@@ -136,7 +179,7 @@ td, th{
     justify-content: center;
   }
   #name{
-    margin: 0 20px 0 0;
+    width: 30%;
+    word-break: break-all;
   }
-
 }

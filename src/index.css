@@ -152,6 +152,16 @@ td, th{
   color: white;
 }
 
+#button-clear{
+  color: black;
+  border: none;
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+#button-clear:hover{
+  background-color: black;
+  color: white;
+}
 @media only screen and (max-width: 800px) {
   :root{
     background-image: url("./assets/GradientMobile.png");

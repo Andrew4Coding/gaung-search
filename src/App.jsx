@@ -53,6 +53,7 @@ function App() {
         </>
       ))}
     </div>
+    {/* <button className='filter-container' id='button-clear'>Clear</button> */}
       </div>
       <div className='row' id='row-head'>
         <table>
